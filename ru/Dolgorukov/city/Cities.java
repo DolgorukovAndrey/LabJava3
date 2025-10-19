@@ -26,16 +26,6 @@ public class Cities {
         }
     }
 
-    public String toString() {
-        String str;
-        str = "Город: " + cityName + "\n";
-        str += "Дороги: ";
-        for (int i = 0; i < ways.size(); i++) {
-            str = str + ways.get(i).getTitle() + ":" + ways.get(i).getPrice() + " ";
-        }
-        return str;
-    }
-
     public String getCityName() {
         return cityName;
     }
@@ -95,8 +85,13 @@ public class Cities {
         return Objects.equals(ways, cities.ways);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(ways);
+    public String toString() {
+        String str;
+        str = "Город: " + cityName + "\n";
+        str += "Дороги: ";
+        for (int i = 0; i < ways.size(); i++) {
+            str = str + ways.get(i).getTitle() + ":" + ways.get(i).getPrice() + " ";
+        }
+        return str;
     }
 }

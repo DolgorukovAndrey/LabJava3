@@ -4,10 +4,10 @@ interface ConvertDouble {
     double toDouble();
 }
 
-class Integer implements ConvertDouble {
+class IntegerEl implements ConvertDouble {
     private int value;
 
-    public Integer(int value) {
+    public IntegerEl(int value) {
         this.value = value;
     }
 
@@ -17,11 +17,11 @@ class Integer implements ConvertDouble {
     }
 }
 
-class Fraction implements ConvertDouble {
+class FractionEl implements ConvertDouble {
     private int numerator;
     private int denominator;
 
-    public Fraction(int numerator, int denominator) {
+    public FractionEl (int numerator, int denominator) {
         this.numerator = numerator;
         this.denominator = denominator;
     }
